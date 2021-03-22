@@ -3,55 +3,48 @@
 {% block title %}Vote{% endblock %}
 
 {% block main %}
-<div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Cast Your Vote</h3>
+% block content %}
+    <div class="container" style="font-family: Domine;">
+        <h1 style="text-align: center;">Lease Form </h1>
+        <br/>
+        <form action="" METHOD="POST">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Full Name</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" name = "name" placeholder="name">
             </div>
-
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2>Which language is easier to learn?</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <hr />
-
-                        <form method="POST">
-                            <div class="form-group">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="poll" value="option1" required>
-                                        Python
-                                    </label> &nbsp;
-                                    <label>
-                                        <input type="radio" name="poll" value="option2">
-                                        JavaScript
-                                    </label> &nbsp;
-                                    <label>
-                                        <input type="radio" name="poll" value="option3">
-                                        Swift
-                                    </label> &nbsp;
-                                </div>
-                            </div>
-
-                            <input type="hidden" name="id" value="1">
-
-                            <hr />
-
-                            <button type="submit" class="btn btn-info">
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Phone Number</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+25478901234">
             </div>
-
-        </div>
+            <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Occupation</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Purpose of Lease</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Faming</option>
+                <option>Housing</option>
+                <option>Commercial</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Payment Method</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Cash</option>
+                <option>M-Pesa</option>
+                <option>Card</option>
+              </select>
+            </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Payment Installments ?</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
     </div>
-</div>
 {% endblock %}
