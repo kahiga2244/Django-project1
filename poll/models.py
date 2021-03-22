@@ -12,8 +12,8 @@ class Poll(models.Model):
 
     Ruto_Samoei_count = models.IntegerField(default=0)
     Raila_Amolo_count = models.IntegerField(default=0)
-    Mudavadi_Musalia = models.IntegerField(default=0)
-    Gideon_Moi = models.IntegerField(default=0)
-    Kivutha_Kibwana = models.IntegerField(default=0)
-    Kituyi_Mukhisa = models.IntegerField(default=0)
+    Mudavadi_Musalia_count = models.IntegerField(default=0)
+    Gideon_Moi_count = models.IntegerField(default=0)
+    Kivutha_Kibwana_count = models.IntegerField(default=0)
+    Kituyi_Mukhisa_count = models.IntegerField(default=0)
 
