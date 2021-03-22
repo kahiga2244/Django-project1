@@ -1,12 +1,14 @@
 from django.shortcuts import render
-
+from .model import Poll
+from .forms import CreatePollForm
 # Create your views here.
 def home(request):
     context = {}
     return render(request, 'home.html',context)
 
 def create(request):
-    context = {}
+    form = CreatePollForm()
+    context = {'form' : form }
     return render(request, 'create.html',context)
 
 def vote(request, poll_id):
