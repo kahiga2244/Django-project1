@@ -103,6 +103,7 @@ To run the application on your development machine,
 - [X] vote for the potential candidate
 - [X] fill a form
 - [X] store user data 
+- [X] read potential presidents wiki pedia and history
 
 ## Collaboration Information
 * Clone the repository
