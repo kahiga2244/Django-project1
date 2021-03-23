@@ -21,7 +21,7 @@ class UserTestClass(TestCase):
         self.assertTrue(len(users) > 0)
         #Testing the delete method
     def test_delete_user(self):
-        # self.us1.save_user()
+        self.us1.save_user()
         self.us1.delete_user()
         users = User.objects.all()
         self.assertTrue(len(users) == 0)
