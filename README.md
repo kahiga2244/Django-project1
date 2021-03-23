@@ -17,7 +17,7 @@ This web app app allows you to vote and get information on the potential next pr
 Clone the the repository by running 
 
    ```bash
-   git clone https://github.com/stephenndele/Django-project1.git
+   git clone https://github.com/kahiga2244/Django-project1.git
    ```
  or download a zip file of the project from github
  
