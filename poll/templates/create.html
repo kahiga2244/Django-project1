@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load widget_tweaks %}
 {% block title %}Create Poll{% endblock %}
 
 {% block main %}
@@ -26,6 +26,7 @@
                             <div class="form-group">
                                 <label for="option1">Option 1</label>
                                 <input type="text" name="option1" id="option1" class="form-control" placeholder="Enter option 1" />
+                            <!-- {% render_field form.option_one %} -->
                             </div>
                         </div>
                         <div class="col-lg-4">
