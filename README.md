@@ -7,7 +7,7 @@
 This web app app allows you to vote and get information on the potential next president in kenya.
 
 ## Live Link (feel free to experiment all features)
-[View Site]()
+[View Site](https://kenyapolls.herokuapp.com/)
 
 
 ## Setup Instructions:
