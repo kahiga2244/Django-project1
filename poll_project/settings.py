@@ -65,10 +65,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*pz@qrwtdf3#8t0*v$8iry-2&lo_a9+$be(jdc6f7sv2enuzi('
+# SECRET_KEY = '*pz@qrwtdf3#8t0*v$8iry-2&lo_a9+$be(jdc6f7sv2enuzi('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -83,7 +83,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'poll',
-    'django-bootstrap3',
+    # 'django-bootstrap3',
     'bootstrap3',
     'widget_tweaks',
 ]
