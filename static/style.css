@@ -29,8 +29,3 @@
 a.navbar-brand, .panel-title {
 	font-weight: bolder;
 }
-body{
-    background-image: url("/images/background.png");
-    background-repeat: no-repeat;
-    background-color: #cccccc;
-}
