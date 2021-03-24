@@ -1,9 +1,8 @@
 from django.contrib import admin
-from .models import User,Poll
+from .models import User,Poll,Commentor
 
-class UserAdmin(admin.ModelAdmin):
-    filter_horizontal =('user',)
 
+admin.site.register(Commentor)
 admin.site.register(User)
 admin.site.register(Poll)
 

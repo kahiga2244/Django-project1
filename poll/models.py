@@ -1,6 +1,9 @@
+from django.contrib import admin
 from django.db import models
 
+
 # Create your models here.
+
 class User(models.Model):
     user_id = models.IntegerField()
     email = models.EmailField()
@@ -16,7 +19,6 @@ class User(models.Model):
     
     def delete_user(self):
         self.delete()
-
 
 class Poll(models.Model):
     president = models.CharField(max_length=30)
@@ -37,9 +39,14 @@ class Poll(models.Model):
     
     def save_user(self):
         self.save()
+
     def delete_user(self):
         self.delete()
 
 
-   
+class Commentor(models.Model):
+    name = models.CharField(max_length=100)
+    title = models.CharField(max_length=3)
+    county = models.CharField(max_length=30)
+    comment = models.CharField(max_length = 30)
 

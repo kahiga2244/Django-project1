@@ -21,7 +21,7 @@
 
 
 from django.shortcuts import render
-from .models import Poll,User
+from .models import Poll,User,Commentor
 from django.template import RequestContext
 from django.views.decorators.csrf import csrf_protect
 
@@ -29,11 +29,12 @@ from django.views.decorators.csrf import csrf_protect
 def home(request):
     context = {}
     return render(request, 'home.html',context)
+    
+#to save comments on page
+def create(request):
+    context = {}
+    return render(request, 'create.html',context)
 
-# def create(request):
-#     # form = CreatePollForm()
-#     context = {'form' : form }
-#     return render(request, 'create.html',context)
 @csrf_protect
 def vote(request):
     context = {}
