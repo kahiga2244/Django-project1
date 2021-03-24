@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', poll_views.home, name='home'),
     path('vote/', poll_views.vote, name='vote'),
+    path('create/',poll_views.create, name='create')
     
 
 ]
