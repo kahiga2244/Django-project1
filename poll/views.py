@@ -31,6 +31,7 @@ def home(request):
     return render(request, 'home.html',context)
     
 #to save comments on page
+@csrf_protect
 def create(request):
     context = {}
     return render(request, 'create.html',context)
