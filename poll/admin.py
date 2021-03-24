@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import User,Poll
 
-# Register your models here.
+class UserAdmin(admin.ModelAdmin):
+    filter_horizontal =('user',)
+
+admin.site.register(User)
+admin.site.register(Poll)
+
